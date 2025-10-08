@@ -1,0 +1,3 @@
+<jugador xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="jugador.xsd"
+    id="1">Mikel</jugador>

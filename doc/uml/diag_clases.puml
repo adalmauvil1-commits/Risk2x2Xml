@@ -1,0 +1,186 @@
+@startuml
+class Territorio {
+- String nombre
+- int propietario
+- int ejercitos
++ <<Create>> Territorio(String)
++ <<Create>> Territorio(String,int,int)
++ String getNombre()
++ void setNombre(String)
++ int getPropietario()
++ void setPropietario(int)
++ int getEjercitos()
++ void setEjercitos(int)
++ void pierdeEjercitos(int)
++ boolean tieneEjercitos()
++ String toXml()
++ {static} void main(String[])
+}
+
+
+class Mapa {
+- Territorio t1
+- Territorio t2
+- Territorio t3
+- Territorio t4
++ int getNumeroTerritorios()
++ void add(Territorio)
++ Territorio getTerritorio(int)
++ Territorio getTerritorio(String)
++ String toXml()
++ {static} void main(String[])
+}
+
+
+class Main {
++ {static} void main(String[])
+}
+
+class Terminal {
+- Scanner scanner
++ <<Create>> Terminal()
++ void escribeTitulo(String)
++ void escribeLinea()
++ void escribeLinea(String)
++ String leeTexto(String)
++ int leeNumero(String)
++ void pintaMapa(String,String,String,String)
++ void pintaMapa(Mapa,Jugadores)
+- String centrado(String,int)
+- String centrado(int,int)
++ {static} void main(String[])
+}
+
+
+class Jugadores {
+- Jugador jugador1
+- Jugador jugador2
++ <<Create>> Jugadores(Jugador,Jugador)
++ void setJugador(int,Jugador)
++ Jugador getJugador(int)
++ String toXml()
++ {static} void main(String[])
+}
+
+
+class Jugadas {
+- int contador
+- Ataque ataque1
+- Ataque ataque2
+- Ataque ataque3
+- Ataque ataque4
+- Ataque ataque5
+- Ataque ataque6
+- Ataque ataque7
+- Ataque ataque8
+- Ataque ataque9
+- Ataque ataque10
++ void addAtaque(Ataque)
++ int cuantosAtaques()
++ String toXml()
++ {static} void main(String[])
+}
+
+
+class Tirada {
+- Dados dadosAtacante
+- Dados dadosDefensor
++ <<Create>> Tirada(int,int)
++ Dados getDadosAtacante()
++ Dados getDadosDefensor()
++ int cuantosGanaAtacante()
++ int cuantosPierdeAtacante()
++ String toXml()
++ String toString()
++ {static} void main(String[])
+}
+
+
+class Ataque {
+- int idJugadorAtacante
+- int idJugadorDefensor
+- Territorio territorioAtacante
+- Territorio territorioDefensor
+- Tirada tirada
++ <<Create>> Ataque(Territorio,Territorio)
++ Tirada getTirada()
++ Tirada ataca()
++ String toXml()
++ {static} void main(String[])
+}
+
+
+class Partida {
+- String fecha
+- String horaIni
+- String horaFin
+- Jugadores jugadores
+- Mapa mapa
+- Jugadas jugadas
+- String mapaIniXml
++ <<Create>> Partida(Jugadores,Mapa)
++ Jugador getJugador(int)
++ Mapa getMapa()
++ Jugadores getJugadores()
++ Tirada ataca(String,String)
++ boolean estaTerminada()
++ int cuantosTerritoriosSonDe(int)
++ int cuantosAtaques()
++ String toXml()
+}
+
+
+class Dados {
+- int v1
+- int v2
+- int v3
++ <<Create>> Dados()
++ <<Create>> Dados(int)
++ <<Create>> Dados(int,int,int)
++ void tirarDado()
++ void tirarDados(int)
++ void meter(int)
++ int cuantosValores()
++ int gana(Dados)
++ String toXml()
++ String toString()
++ {static} void main(String[])
+}
+
+
+class Juego {
+- int MAX
+- Terminal t
+- Partida partida
++ <<Create>> Juego()
++ void empezar()
++ void jugar(int)
++ void terminar()
+}
+
+
+class Jugador {
+- int id
+- String nombre
++ <<Create>> Jugador(int,String)
++ int getId()
++ String getNombre()
++ String toXml()
++ {static} void main(String[])
+}
+
+Main ..> Juego
+Juego --> Terminal
+Juego --> Partida
+Terminal ..> Mapa
+Terminal ..> Jugadores
+Mapa *->  Territorio
+Jugadores *-> Jugador
+Partida --> Jugadores
+Partida --> Mapa
+Partida --> Jugadas
+Jugadas *--> Ataque
+Ataque *--> Territorio
+Ataque --> Tirada
+Tirada *-> Dados
+@enduml

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="partida" type="partidaType"/>
+  <xs:complexType name="partidaType">
+    <xs:sequence>
+      <xs:element type="jugadoresType" name="jugadores"/>
+      <xs:element type="mapaType" name="mapa"/>
+      <xs:element type="jugadasType" name="jugadas"/>
+    </xs:sequence>
+    <xs:attribute type="xs:date" name="fecha"/>
+    <xs:attribute type="xs:time" name="horaIni"/>
+    <xs:attribute type="xs:time" name="horaFin"/>
+  </xs:complexType>
+  <xs:complexType name="jugadoresType">
+    <xs:sequence>
+      <xs:element type="jugadorType" name="jugador" maxOccurs="2" minOccurs="2"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="jugadorType">
+    <xs:simpleContent>
+      <xs:extension base="tipoNombre">
+        <xs:attribute type="xs:positiveInteger" name="id" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="tipoNombre">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="12"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="mapaType">
+    <xs:sequence>
+      <xs:element type="territorioType" name="territorio" maxOccurs="4" minOccurs="4"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="territorioType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nombre"/>
+      <xs:element type="xs:positiveInteger" name="propietario"/>
+      <xs:element type="tipoMayorIgual0" name="ejercitos"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="tipoMayorIgual0">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="0"></xs:minInclusive>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="jugadasType">
+    <xs:sequence>
+      <xs:element type="ataqueType" name="ataque" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ataqueType">
+    <xs:sequence>
+      <xs:element type="tipoAtacaDefiende" name="ataca"/>
+      <xs:element type="tipoAtacaDefiende" name="defiende"/>
+      <xs:element type="tiradaType" name="tirada"/>
+      <xs:element type="territorioType" name="territorio" maxOccurs="2" minOccurs="2"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipoAtacaDefiende">
+    <xs:sequence>
+      <xs:element type="xs:positiveInteger" name="jugador"/>
+      <xs:element type="xs:string" name="territorio"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tiradaType">
+    <xs:sequence>
+      <xs:element type="dadosType" name="dados" maxOccurs="2" minOccurs="2"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dadosType">
+    <xs:sequence>
+      <xs:element type="tipoValorDado6" name="valor" maxOccurs="3" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="tipoValorDado6">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="6"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,62 @@
+@startuml
+class Territorio {
+}
+
+
+class Mapa {
+}
+
+
+class Main {
+}
+
+class Terminal {
+}
+
+
+class Jugadores {
+}
+
+
+class Jugadas {
+}
+
+
+class Tirada {
+}
+
+
+class Ataque {
+}
+
+
+class Partida {
+}
+
+
+class Dados {
+}
+
+
+class Juego {
+}
+
+
+class Jugador {
+}
+
+Main ..> Juego
+Juego --> Terminal
+Juego --> Partida
+Terminal ..> Mapa
+Terminal ..> Jugadores
+Mapa *->  Territorio
+Jugadores *-> Jugador
+Partida --> Jugadores
+Partida --> Mapa
+Partida --> Jugadas
+Jugadas *--> Ataque
+Ataque *--> Territorio
+Ataque --> Tirada
+Tirada *-> Dados
+@enduml

@@ -1,0 +1,12 @@
+<tirada xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="tirada.xsd">
+    <dados>
+        <valor>4</valor>
+        <valor>4</valor>
+        <valor>2</valor>
+    </dados>
+    <dados>
+        <valor>6</valor>
+        <valor>6</valor>
+    </dados>
+</tirada>

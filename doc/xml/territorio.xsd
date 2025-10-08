@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="territorio" type="territorioType"/>
+  <xs:complexType name="territorioType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nombre"/>
+      <xs:element type="xs:positiveInteger" name="propietario"/>
+      <xs:element type="tipoMayorIgual0" name="ejercitos"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="tipoMayorIgual0">
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

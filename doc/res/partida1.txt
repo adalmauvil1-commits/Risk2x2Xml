@@ -1,0 +1,134 @@
+
+#################################
+#         Risk_2x2_xml          #
+#################################
+
+Nombre del jugador 1: Aitor
+Nombre del jugador 2: Javi
+
+Cuando se te pida un barrio escribe su nombre, ej:
+Buztintxuri, Arrosadia, Txantrea, Iturrama, ...
+
+Se deben distribuir hasta 7 ejercitos en 2 barrios
+
+Aitor, elige barrio: Txantrea
+Ejercitos en Txantrea: 4
+Javi, elige barrio: Donibane
+Ejercitos en Donibane: 3
+Aitor, elige barrio: Arrosadia
+Ejercitos en Arrosadia: 3
+Javi, elige barrio: Iturrama
+Ejercitos en Iturrama: 4
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢   Txantrea    ⎢   Donibane    ⎢
+⎢     Aitor     ⎢     Javi      ⎢
+⎢       4       ⎢       3       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢   Arrosadia   ⎢   Iturrama    ⎢
+⎢     Aitor     ⎢     Javi      ⎢
+⎢       3       ⎢       4       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+Aitor, elige barrio atacante: Txantrea
+Aitor, elige barrio que atacar: Donibane
+[6] [6] [5]
+[5] [1]
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢   Txantrea    ⎢   Donibane    ⎢
+⎢     Aitor     ⎢     Javi      ⎢
+⎢       4       ⎢       1       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢   Arrosadia   ⎢   Iturrama    ⎢
+⎢     Aitor     ⎢     Javi      ⎢
+⎢       3       ⎢       4       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+Javi, elige barrio atacante: Iturrama
+Javi, elige barrio que atacar: Arrosadia
+[4] [3] [2]
+[4] [1]
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢   Txantrea    ⎢   Donibane    ⎢
+⎢     Aitor     ⎢     Javi      ⎢
+⎢       4       ⎢       1       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢   Arrosadia   ⎢   Iturrama    ⎢
+⎢     Aitor     ⎢     Javi      ⎢
+⎢       2       ⎢       3       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+Aitor, elige barrio atacante: Arrosadia
+Aitor, elige barrio que atacar: Donibane
+[2] [2]
+[1]
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢   Txantrea    ⎢   Donibane    ⎢
+⎢     Aitor     ⎢     Aitor     ⎢
+⎢       4       ⎢       1       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢   Arrosadia   ⎢   Iturrama    ⎢
+⎢     Aitor     ⎢     Javi      ⎢
+⎢       2       ⎢       3       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+Javi, elige barrio atacante: Iturrama
+Javi, elige barrio que atacar: Txantrea
+[3] [2] [1]
+[3] [1]
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢   Txantrea    ⎢   Donibane    ⎢
+⎢     Aitor     ⎢     Aitor     ⎢
+⎢       3       ⎢       1       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢   Arrosadia   ⎢   Iturrama    ⎢
+⎢     Aitor     ⎢     Javi      ⎢
+⎢       2       ⎢       2       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+Aitor, elige barrio atacante: Txantrea
+Aitor, elige barrio que atacar: Iturrama
+[6] [6] [1]
+[6] [5]
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢   Txantrea    ⎢   Donibane    ⎢
+⎢     Aitor     ⎢     Aitor     ⎢
+⎢       2       ⎢       1       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢   Arrosadia   ⎢   Iturrama    ⎢
+⎢     Aitor     ⎢     Javi      ⎢
+⎢       2       ⎢       1       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+Javi, elige barrio atacante: Iturrama
+Javi, elige barrio que atacar: Donibane
+[4]
+[4]
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢   Txantrea    ⎢   Donibane    ⎢
+⎢     Aitor     ⎢     Aitor     ⎢
+⎢       2       ⎢       1       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢   Arrosadia   ⎢   Iturrama    ⎢
+⎢     Aitor     ⎢     Aitor     ⎢
+⎢       2       ⎢       1       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+
+El juego ha terminado
+
+Se han jugado 6 jugadas
+
+Aitor tiene 4 territorios.
+Javi tiene 0 territorios.
+
+
+#################################
+#             PEACE             #
+#################################

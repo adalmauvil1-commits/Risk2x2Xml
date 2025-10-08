@@ -1,0 +1,194 @@
+
+#################################
+#         Risk_2x2_xml          #
+#################################
+
+Nombre del jugador 1: Noemy
+Nombre del jugador 2: Carmen
+
+Cuando se te pida un barrio escribe su nombre, ej:
+Buztintxuri, Arrosadia, Txantrea, Iturrama, ...
+
+Se deben distribuir hasta 7 ejercitos en 2 barrios
+
+Noemy, elige barrio: Mendillorri
+Ejércitos en Mendillorri: 3
+Carmen, elige barrio: Nabarreria
+Ejércitos en Nabarreria: 3
+Noemy, elige barrio: El Soto
+Ejércitos en El Soto: 4
+Carmen, elige barrio: Ermitagaña
+Ejércitos en Ermitagaña: 4
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢  Mendillorri  ⎢  Nabarreria   ⎢
+⎢     Noemy     ⎢    Carmen     ⎢
+⎢       3       ⎢       3       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢    El Soto    ⎢  Ermitagaña   ⎢
+⎢     Noemy     ⎢    Carmen     ⎢
+⎢       4       ⎢       4       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+Noemy, elige barrio atacante: El Soto
+Noemy, elige barrio que atacar: Nabarreria
+[5] [1] [1]
+[6] [3]
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢  Mendillorri  ⎢  Nabarreria   ⎢
+⎢     Noemy     ⎢    Carmen     ⎢
+⎢       3       ⎢       3       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢    El Soto    ⎢  Ermitagaña   ⎢
+⎢     Noemy     ⎢    Carmen     ⎢
+⎢       2       ⎢       4       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+Carmen, elige barrio atacante: Ermitagaña
+Carmen, elige barrio que atacar: El Soto
+[6] [5] [3]
+[3] [2]
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢  Mendillorri  ⎢  Nabarreria   ⎢
+⎢     Noemy     ⎢    Carmen     ⎢
+⎢       3       ⎢       3       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢    El Soto    ⎢  Ermitagaña   ⎢
+⎢    Carmen     ⎢    Carmen     ⎢
+⎢       1       ⎢       4       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+Noemy, elige barrio atacante: Mendillorri
+Noemy, elige barrio que atacar: Nabarreria
+[6] [4] [1]
+[5] [1]
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢  Mendillorri  ⎢  Nabarreria   ⎢
+⎢     Noemy     ⎢    Carmen     ⎢
+⎢       3       ⎢       1       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢    El Soto    ⎢  Ermitagaña   ⎢
+⎢    Carmen     ⎢    Carmen     ⎢
+⎢       1       ⎢       4       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+Carmen, elige barrio atacante: Ermitagaña
+Carmen, elige barrio que atacar: Mendillorri
+[5] [4] [3]
+[5] [1]
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢  Mendillorri  ⎢  Nabarreria   ⎢
+⎢     Noemy     ⎢    Carmen     ⎢
+⎢       2       ⎢       1       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢    El Soto    ⎢  Ermitagaña   ⎢
+⎢    Carmen     ⎢    Carmen     ⎢
+⎢       1       ⎢       3       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+Noemy, elige barrio atacante: Mendillorri
+Noemy, elige barrio que atacar: El Soto
+[5] [5]
+[2]
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢  Mendillorri  ⎢  Nabarreria   ⎢
+⎢     Noemy     ⎢    Carmen     ⎢
+⎢       2       ⎢       1       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢    El Soto    ⎢  Ermitagaña   ⎢
+⎢     Noemy     ⎢    Carmen     ⎢
+⎢       1       ⎢       3       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+Carmen, elige barrio atacante: Ermitagaña
+Carmen, elige barrio que atacar: Mendillorri
+[5] [4] [2]
+[6] [1]
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢  Mendillorri  ⎢  Nabarreria   ⎢
+⎢     Noemy     ⎢    Carmen     ⎢
+⎢       1       ⎢       1       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢    El Soto    ⎢  Ermitagaña   ⎢
+⎢     Noemy     ⎢    Carmen     ⎢
+⎢       1       ⎢       2       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+Noemy, elige barrio atacante: Mendillorri
+Noemy, elige barrio que atacar: Nabarreria
+[6]
+[1]
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢  Mendillorri  ⎢  Nabarreria   ⎢
+⎢     Noemy     ⎢     Noemy     ⎢
+⎢       1       ⎢       1       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢    El Soto    ⎢  Ermitagaña   ⎢
+⎢     Noemy     ⎢    Carmen     ⎢
+⎢       1       ⎢       2       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+Carmen, elige barrio atacante: Ermitagaña
+Carmen, elige barrio que atacar: El Soto
+[5] [1]
+[3]
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢  Mendillorri  ⎢  Nabarreria   ⎢
+⎢     Noemy     ⎢     Noemy     ⎢
+⎢       1       ⎢       1       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢    El Soto    ⎢  Ermitagaña   ⎢
+⎢    Carmen     ⎢    Carmen     ⎢
+⎢       1       ⎢       2       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+Noemy, elige barrio atacante: Nabarreria
+Noemy, elige barrio que atacar: Ermitagaña
+[1]
+[1] [1]
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢  Mendillorri  ⎢  Nabarreria   ⎢
+⎢     Noemy     ⎢    Carmen     ⎢
+⎢       1       ⎢       1       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢    El Soto    ⎢  Ermitagaña   ⎢
+⎢    Carmen     ⎢    Carmen     ⎢
+⎢       1       ⎢       2       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+Carmen, elige barrio atacante: Ermitagaña
+Carmen, elige barrio que atacar: Mendillorri
+[6] [1]
+[6]
+
+⎡―――――――――――――――――――――――――――――――⎤
+⎢  Mendillorri  ⎢  Nabarreria   ⎢
+⎢     Noemy     ⎢    Carmen     ⎢
+⎢       1       ⎢       1       ⎢
+⎢―――――――――――――――――――――――――――――――⎢
+⎢    El Soto    ⎢  Ermitagaña   ⎢
+⎢    Carmen     ⎢    Carmen     ⎢
+⎢       1       ⎢       1       ⎢
+⎣―――――――――――――――――――――――――――――――⎦
+
+
+El juego ha terminado
+
+Se han jugado 10 jugadas
+
+Noemy tiene 1 territorios.
+Carmen tiene 3 territorios.
+
+
+#################################
+#             PEACE             #
+#################################

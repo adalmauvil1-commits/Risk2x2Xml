@@ -1,0 +1,23 @@
+<mapa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="mapa.xsd">
+    <territorio>
+        <nombre>Buztintxuri</nombre>
+        <propietario>1</propietario>
+        <ejercitos>4</ejercitos>
+    </territorio>
+    <territorio>
+        <nombre>Arrosadia</nombre>
+        <propietario>2</propietario>
+        <ejercitos>3</ejercitos>
+    </territorio>
+    <territorio>
+        <nombre>Txantrea</nombre>
+        <propietario>1</propietario>
+        <ejercitos>3</ejercitos>
+    </territorio>
+    <territorio>
+        <nombre>Iturrama</nombre>
+        <propietario>2</propietario>
+        <ejercitos>4</ejercitos>
+    </territorio>
+</mapa>
