@@ -31,7 +31,7 @@ public class Ataque {
      */
     public Tirada getTirada() {
         // TODO: getTirada
-        return null;
+        return tirada;
     }
 
     /**
