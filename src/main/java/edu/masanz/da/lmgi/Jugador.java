@@ -12,6 +12,8 @@ public class Jugador {
      */
     public Jugador(int id, String nombre) {
         // TODO: Jugador
+        this.id = id;
+        this.nombre = nombre;
     }
 
     // region getters y setters
