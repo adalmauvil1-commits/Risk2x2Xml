@@ -12,6 +12,7 @@ public class Territorio {
      */
     public Territorio(String nombre) {
         // TODO: Territorio(nombre)
+        nombre = "";
     }
 
     /**
@@ -22,6 +23,9 @@ public class Territorio {
      */
     public Territorio(String nombre, int propietario, int ejercitos) {
         // TODO: Territorio(nombre,propietario,ejercitos)
+        nombre = "";
+        propietario = 0;
+        ejercitos = 0;
     }
 
     // region getters y setters
@@ -59,6 +63,10 @@ public class Territorio {
      */
     public void pierdeEjercitos(int n) {
         // TODO: pierdeEjercitos
+        ejercitos = getEjercitos() - n;
+        if (ejercitos < 0){
+            System.out.println("Pierde");
+        }
     }
 
     /**
@@ -66,6 +74,9 @@ public class Territorio {
      */
     public boolean tieneEjercitos() {
         // TODO: tieneEjercitos
+        if (ejercitos > 0 ){
+            return true;
+        }
         return false;
     }
 
@@ -74,7 +85,8 @@ public class Territorio {
      * @return String con el XML
      */
     public String toXml() {
-        String s = "";
+        String s = "</territorio> \n<nombre>\n"+nombre+"\n</nombre> " +
+                "\n<propietario>\n"+propietario+ "</propietario>";
         // TODO: toXml
         return s;
     }

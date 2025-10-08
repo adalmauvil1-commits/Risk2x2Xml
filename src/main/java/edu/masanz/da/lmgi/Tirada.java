@@ -12,8 +12,9 @@ public class Tirada {
      */
     public Tirada(int numDadosAtacante, int numDadosDefensor) {
         // TODO: Tirada
-        numDadosAtacante = 3;
-        numDadosDefensor = 2;
+        dadosAtacante = new Dados(numDadosAtacante);
+        dadosDefensor = new Dados(numDadosDefensor);
+
     }
 
     // region getters y setters
@@ -34,7 +35,8 @@ public class Tirada {
      */
     public int cuantosGanaAtacante() {
         // TODO: cuantosGanaAtacante
-        return 0;
+        int n = dadosAtacante.gana(dadosAtacante);
+        return n;
     }
 
     /**
@@ -43,7 +45,8 @@ public class Tirada {
      */
     public int cuantosPierdeAtacante() {
         // TODO: cuantosPierdeAtacante
-        return 0;
+        int n = dadosAtacante.gana(dadosAtacante);
+        return n;
     }
 
     /**
@@ -51,7 +54,9 @@ public class Tirada {
      * @return String con el XML de la tirada
      */
     public String toXml() {
-        String s = "";
+        String s = "<tirada> \n<dadosAtacante> \n"+dadosAtacante+ "\n</dadosAtacante>"+
+                "\n<dadosDefensor> \n"+dadosDefensor+"\n</dadosDefensor>"+
+                "\n</tirada>";
         // TODO: toXml
         return s;
     }
@@ -63,7 +68,8 @@ public class Tirada {
      * @return String con la representación de la tirada
      */
     public String toString() {
-        String s = "";
+        String s = "Tirada \nDadosAtacante: \n" +dadosAtacante+
+                "\nDadosDefensor: \n" +dadosDefensor;
         // TODO: toString
         return s;
     }

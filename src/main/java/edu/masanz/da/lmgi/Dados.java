@@ -132,8 +132,7 @@ public class Dados {
             n = n +1;
         } if (this.v2 > d2.v2){
             n = n +1;
-        } if (this.v3 > d2.v3){
-            n = n +1;
+
         }
 
         // TODO: gana
